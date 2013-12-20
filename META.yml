@@ -25,4 +25,4 @@ requires:
 resources:
   homepage: https://github.com/ido50/McBain-WithGearmanXS
   repository: https://github.com/ido50/McBain-WithGearmanXS.git
-version: 1.000000
+version: 1.001000

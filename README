@@ -2,7 +2,7 @@ NAME
     McBain::WithGearmanXS - Load a McBain API as a Gearman worker
 
 VERSION
-    version 1.000000
+    version 1.001000
 
 SYNOPSIS
             # write your API as you normally would, and create
