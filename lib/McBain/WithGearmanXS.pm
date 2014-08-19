@@ -10,16 +10,12 @@ use Gearman::XS qw(:constants);
 use Gearman::XS::Worker;
 use JSON;
 
-our $VERSION = "1.001000";
+our $VERSION = "2.000000";
 $VERSION = eval $VERSION;
 
 =head1 NAME
  
 McBain::WithGearmanXS - Load a McBain API as a Gearman worker
-
-=head1 VERSION
-
-version 1.001000
 
 =head1 SYNOPSIS
 
@@ -28,11 +24,9 @@ version 1.001000
 
 	#!/usr/bin/perl -w
 
-	BEGIN { $ENV{MCBAIN_WITH} = 'WithGearmanXS'; }
-
 	use warnings;
 	use strict;
-	use MyAPI;
+	use MyAPI -withGearmanXS;
 
 	MyAPI->work('localhost', 4730);
 
@@ -206,9 +200,7 @@ sub _register_functions {
 
 =head1 CONFIGURATION AND ENVIRONMENT
    
-No configuration files are required. To tell L<McBain> to use this runner module,
-the C<MCBAIN_WITH> environment variable must be set to C<WithGearmanXS>. See the
-L</"SYNOPSIS"> for an example.
+No configuration files are required.
  
 =head1 DEPENDENCIES
  
